@@ -127,6 +127,21 @@ local nullius_mining_drone = {
   ]],
 }
 
+---@type data.SimulationDefinition
+local nullius_trains = {
+  checkboard = false,
+  save = "__nullius__/menu-simulations/trains.zip",
+  length = 23 * second,
+  init = [[
+    local logo = game.surfaces.nauvis.find_entities_filtered{name = "factorio-logo-11tiles", limit = 1}[1]
+    logo.destructible = false
+    game.simulation.camera_position = {logo.position.x, logo.position.y + 12}
+    game.simulation.camera_zoom = 1
+    game.tick_paused = false
+  ]],
+}
+
+
 local simulations = {
   nullius_solar_panels = nullius_solar_panels,
   nullius_labs = nullius_labs,
@@ -136,6 +151,7 @@ local simulations = {
   nullius_blue_science = nullius_blue_science,
   nullius_expoxy = nullius_epoxy,
   nullius_mining_drone = nullius_mining_drone,
+  nullius_trains = nullius_trains,
 }
 
 -- Uncomment to debug a single visualization
