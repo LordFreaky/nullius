@@ -76,7 +76,7 @@ local nullius_blue_science = {
   init = [[
     local logo = game.surfaces.nauvis.find_entities_filtered{name = "factorio-logo-22tiles", limit = 1}[1]
     logo.destructible = false
-    game.simulation.camera_position = {logo.position.x, logo.position.y - 28}
+    game.simulation.camera_position = {logo.position.x, logo.position.y - 30}
     game.simulation.camera_zoom = 0.5
     game.tick_paused = false
   ]],
