@@ -2154,6 +2154,7 @@ data:extend({
   {
     type = "technology",
     name = "nullius-actuation-2",
+    localised_description = {"", {"technology-description.nullius-actuation"}, {"technology-description.nullius-actuation-can-filter"}},
     order = "nullius-dc",
     icon = "__base__/graphics/technology/fast-inserter.png",
     icon_size = 256,
@@ -6235,6 +6236,7 @@ data:extend({
   {
     type = "technology",
     name = "nullius-actuation-3",
+    localised_description = {"", {"technology-description.nullius-actuation"}, {"technology-description.nullius-actuation-can-filter"}},
     order = "nullius-ej",
     icon = "__base__/graphics/technology/bulk-inserter.png",
     icon_size = 256,
@@ -9676,6 +9678,7 @@ data:extend({
   {
     type = "technology",
     name = "nullius-actuation-4",
+    localised_description = {"", {"technology-description.nullius-actuation"}, {"technology-description.nullius-actuation-can-filter"}},
     order = "nullius-fd",
     icon_size = 128,
     icon = "__boblogistics__/graphics/icons/technology/green-inserter.png",
