@@ -8365,13 +8365,12 @@ data:extend({
 
   {
     type = "technology",
-    name = "nullius-diesel",
+    name = "nullius-hydrocarbon-combustion-3",
     order = "nullius-ek",
 
-    localised_name = {"fluid-name.nullius-diesel"},
     icon = "__base__/graphics/icons/fluid/heavy-oil.png",
     icon_size = 64,
-    
+
     effects = {
       {
         type = "unlock-recipe",
@@ -9254,7 +9253,7 @@ data:extend({
       },
       time = 35
     },
-    prerequisites = {"nullius-parallel-computing-2", "nullius-braking-5", "nullius-diesel", "nullius-robot-cargo-1"}
+    prerequisites = {"nullius-parallel-computing-2", "nullius-braking-5", "nullius-hydrocarbon-combustion-3", "nullius-robot-cargo-1"}
   },
   {
     type = "technology",
