@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.9
-Date: xx.xx.2026
+Date: 09.06.2026
   Features:
     - Biodiesel is now Diesel with a brand new recipe unlocked in late Chemistry research. The old Biodiesel recipe is now an more efficient alternative.
     - Added new menu simulations
