@@ -56,7 +56,7 @@ function entity_removed(entity, died, buffer)
       return
     end
   end
-  if entity.burner and entity.burner.currently_burning then
+  if entity.burner and buffer and entity.burner.currently_burning then
 	local burnt_result = entity.burner.currently_burning.name.burnt_result
 	if burnt_result and (string.sub(burnt_result.name, 1, 26) == "nullius-uncharged-battery-") then
 	   buffer.insert({name = burnt_result, count = 1})
