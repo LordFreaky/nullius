@@ -47,6 +47,14 @@ function entity_added(entity, handbuilt)
   end
 end
 
+local refundable_burnt_result = { -- what burnt results should be returned if an entity is mined
+	["nullius-uncharged-battery-1"] = true,
+	["nullius-uncharged-battery-2"] = true,
+	["nullius-uncharged-battery-3"] = true,
+	["nullius-canister"] = true,
+	["nullius-water-canister"] = true,
+}
+
 function entity_removed(entity, died, buffer)
   if (string.sub(entity.name, 1, 8) ~= "nullius-") then
     if (entity.type == "constant-combinator" and
@@ -58,7 +66,7 @@ function entity_removed(entity, died, buffer)
   end
   if entity.burner and buffer and entity.burner.currently_burning then
 	local burnt_result = entity.burner.currently_burning.name.burnt_result
-	if burnt_result and (string.sub(burnt_result.name, 1, 26) == "nullius-uncharged-battery-") then
+	if burnt_result and refundable_burnt_result[burnt_result.name] then
 	   buffer.insert({name = burnt_result, count = 1})
 	end
   end
