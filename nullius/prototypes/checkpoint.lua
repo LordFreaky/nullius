@@ -212,6 +212,29 @@ data:extend({
   },
   {
     type = "technology",
+    name = "nullius-checkpoint-toggle-pump",
+    localised_name = {"technology-name.nullius-checkpoint", {"technology-name.nullius-demonstration",
+	    {"entity-name.nullius-togglable-pump"}}},
+    localised_description = {"technology-description.nullius-toggle-pump"},
+    order = "nullius-yb",
+    icons = {
+      {
+        icon = "__nullius__/graphics/icons/entity/pump-blue.png",
+        icon_size = 64,
+        
+      },
+      checkmark(2.25)
+    },
+    unit = {
+      count = 1,
+      ingredients = {{"nullius-checkpoint", 1}, {"nullius-geology-pack", 1}},
+      time = 1
+    },
+    prerequisites = {"nullius-plumbing-1"},
+    ignore_tech_cost_multiplier = true
+  },
+  {
+    type = "technology",
     name = "nullius-checkpoint-caustic-solution",
     localised_name = {"technology-name.nullius-checkpoint", {"technology-name.nullius-utilization",
 	    {"fluid-name.nullius-caustic-solution"}}},

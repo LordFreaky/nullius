@@ -384,7 +384,7 @@ data:extend({
       ingredients = {{"nullius-geology-pack", 1}, {"nullius-climatology-pack", 2}},
       time = 8
     },
-    prerequisites = {"nullius-plumbing-1", "nullius-iron-working-2", "nullius-masonry-1"},
+    prerequisites = {"nullius-checkpoint-toggle-pump", "nullius-iron-working-2", "nullius-masonry-1"},
     ignore_tech_cost_multiplier = true
   },
   {
